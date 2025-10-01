@@ -75,14 +75,58 @@ def get_btc_info(btc_address):
     except Exception as e:
         print(Fore.RED + f"Error: {e}")
 
+def show_social_media():
+    print(Fore.CYAN + "\n" + "═"*50)
+    print(Fore.YELLOW + "🌐 OFFICIAL SOCIAL MEDIA ACCOUNTS")
+    print(Fore.CYAN + "═"*50)
+    print(Fore.WHITE + "📘 Facebook: " + Fore.BLUE + "https://www.facebook.com/profile.php?id=100083644015414")
+    print(Fore.WHITE + "🐦 X (Twitter): " + Fore.BLUE + "https://twitter.com/abujamalhack")
+    print(Fore.WHITE + "📸 Instagram: " + Fore.BLUE + "https://www.instagram.com/abujamalhack")
+    print(Fore.WHITE + "🎵 TikTok: " + Fore.BLUE + "tiktok.com/@aiii_2024")
+    print(Fore.WHITE + "📧 Email: " + Fore.BLUE + "abujamalhack@info.com")
+    print(Fore.CYAN + "═"*50)
+
+def show_developer_info():
+    print(Fore.MAGENTA + "\n" + "👑"*50)
+    print(Fore.YELLOW + "💻 DEVELOPED WITH LOVE BY ABU JAMAL ABDULNASSER AL-SHOUKI")
+    print(Fore.MAGENTA + "👑"*50)
+    print(Fore.WHITE + "👨‍💻 CEO at Hack Underway")
+    print(Fore.WHITE + "🔐 Security Researcher")
+    print(Fore.WHITE + "🐍 Made in Python with ❤️")
+    print(Fore.WHITE + "🔗 All social media accounts activated")
+    print(Fore.MAGENTA + "👑"*50)
+
+def show_permissions():
+    print(Fore.GREEN + "\n" + "⭐"*50)
+    print(Fore.YELLOW + "🔓 FULL PERMISSIONS GRANTED")
+    print(Fore.GREEN + "⭐"*50)
+    print(Fore.WHITE + "✅ Full access to blockchain data")
+    print(Fore.WHITE + "✅ Complete OSINT capabilities") 
+    print(Fore.WHITE + "✅ Social media integration")
+    print(Fore.WHITE + "✅ Commercial use allowed")
+    print(Fore.WHITE + "✅ Modification and distribution")
+    print(Fore.WHITE + "✅ Cross-platform support")
+    print(Fore.WHITE + "✅ Community collaboration")
+    print(Fore.GREEN + "⭐"*50)
+
 if __name__ == "__main__":
     print_colored_ascii(ascii_art)
 
-    # Author
-    firma = "By: Hack Underway\n"
-    print(Style.BRIGHT + Fore.WHITE + firma.rjust(35) + Style.RESET_ALL)
+    # عرض المعلومات الجديدة
+    show_social_media()
+    show_developer_info()
+    show_permissions()
+
+    # التوقيع المحدث
+    firma = "By: Abu Jamal Abdulnasser Al-Shouki - @abujamalhack\n"
+    print(Style.BRIGHT + Fore.WHITE + firma.rjust(45) + Style.RESET_ALL)
 
     btc_address = input(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "Introduce una dirección de ₿itcoin: " + Style.RESET_ALL)
     get_btc_info(btc_address)
     
     print("\n" + " " * 2 + Style.BRIGHT + Fore.RED + "BlockChain OSINT " + Fore.WHITE + Style.BRIGHT + "I like to See You " + Fore.RED + "Happy OSINT" + Style.RESET_ALL + " 🚀\n")
+    
+    # رسالة ختامية محدثة
+    print(Fore.LIGHTCYAN_EX + "💝 Thank you for using BlockChain v2.0!")
+    print(Fore.LIGHTYELLOW_EX + "🔗 Follow me on all social media: @abujamalhack")
+    print(Fore.LIGHTGREEN_EX + "⭐ Support the project - Abu Jamal Abdulnasser Al-Shouki\n")
